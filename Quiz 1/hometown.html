@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="base-logo.png">
+    <meta name="description" content="My Hometown: Medan"> 
+    <title>
+        My Hometown
+    </title>
+</head>
+
+<body>
+  
+  <video autoplay muted loop id="myVideo">
+        <source src="hometown.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+        </video>
+      
+        <div class="content">
+            <h1>Medan</h1>
+            <p>Medan is the capital city of the Indonesian province of North Sumatra. It is the largest city in Sumatra and the fifth-most populous city proper in Indonesia with a 2016 estimated population at 2,229,408 within its city limits. The Medan metropolitan area is home to 4.6 million people, making it the fifth most populous metropolitan area in the country and the largest outside of Java. Medan is a multicultural metropolis and a busy trading city bordered by the Strait of Malacca. A gateway to the western part of Indonesia, Medan is supported by the Port of Belawan and Kualanamu International Airport, both of which are connected to the city centre via toll road and railway. According to the National Development Planning Agency, Medan is one of the four main central cities of Indonesia, alongside Jakarta, Surabaya, and Makassar.</p>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+            <button id="myBtn" onclick="window.location.href='index.html'">Homepage</button>
+        </div>
+</body>
+
+<script>
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("myBtn");
+            
+            function myFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+              } else {
+                video.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+</script>
+            

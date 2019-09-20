@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="base-logo.png">
+        <link rel="stylesheet" href="style.css">
+        <meta name="description" content="Foods In Medan"> 
+        <title>
+            Foods In Medan
+        </title>
+    </head>
+
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: "Lato", sans-serif;}
+
+        /* Style the tab */
+        .tab {
+            float: left;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            width: 25%;
+            height: 400px;
+        }
+
+        /* Style the buttons inside the tab */
+            .tab button {
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-left: none;
+            height: 400px;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #000;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+
+    <body>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="hometown.html">Hometown</a>
+            <a href="food.html">Food</a>
+            <a href="tourist.html">Tourist</a>
+            <div class="dropdown">
+                <button class="dropbtn">Social 
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <a href="https://www.facebook.com/leonitamega">Facebook</a>
+                <a href="https://twitter.com/leonitamsr">Twitter</a>
+                <a href="https://www.instagram.com/leonitamega">Instagram</a>
+                </div>
+            </div> 
+        </div>
+
+        <h2>Foods Worth the Try in Medan</h2>
+        <p>Click on the buttons inside to see the contents.</p>
+
+        <div class="tab">
+        <button class="tablinks" onclick="openfood(event, 'Bakmie')" id="defaultOpen">Bakmie Hock Seng</button>
+        <button class="tablinks" onclick="openfood(event, 'Apek')">Kedai Kopi Apek</button>
+        <button class="tablinks" onclick="openfood(event, 'Amin')">Nasi Ayam Amin</button>
+        <button class="tablinks" onclick="openfood(event, 'Kesawan')">Soto Kesawan</button>
+        <button class="tablinks" onclick="openfood(event, 'Gumarang')">Gumarang Jaya</button>
+        <button class="tablinks" onclick="openfood(event, 'Ondo')">Ondo</button>
+        </div>
+
+        <div id="Bakmie" class="tabcontent">
+        <h3>Bakmie Hock Seng</h3>
+        <table>
+        <tr>
+          <th><img src="f-1.jpg" alt="Bakmie Hock Seng" style="width:75%"></th>
+          <th><p style="font-size: 20px">Operating since 1932, Bakmi Hock Seng had been consistent with their taste and is never stingy with the ingredients. With generous toppings and delicious noodles, it is no wonder they are still one of the locals’ penchant for breakfast!.</p></th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="Apek" class="tabcontent">
+        <h3>Kedai Kopi Apek</h3>
+        <table>
+                <tr>
+                <th><div class="row">
+                        <div class="column">
+                            <img src="f-2.jpg" alt="Kedai Kopi Apek" style="width:100%">
+                            </div>
+                            <div class="column">
+                            <img src="f-21.jpg" alt="Iced Coffee" style="width:100%">
+                            </div>
+                            <div class="column">
+                            <img src="f-22.jpg" alt="Kaya Skippy Toast" style="width:100%">
+                            </div>
+                        </div></th>
+                <th><p style="font-size: 20px">Graced with a traditional outlook and an even more old-fashioned furniture, it is truly a place to imagine how Medan had been like back in the olden days. While sitting in a cramped space near the window, enjoy a glass of their Kopi Susu Dingin (Iced Coffee Latte) which is what they are known for while getting a plate of toast for breakfast. (However, the price might be a tad too pricy for a cup of coffee — at least for the locals).</p></th>
+                </tr>
+            </table> 
+        </div>
+
+        <div id="Amin" class="tabcontent">
+        <h3>Nasi Ayam Amin</h3>
+        <table>
+            <tr>
+                <th>
+                <img src="f-31.jpg" alt="Nasi Ayam Amin" style="width:100%">
+                </th>
+                <th><p style="font-size: 20px">This rice stall that has been operating for more than 40 years, serves rice with shredded chicken, minced pork, cucumber, boiled egg and fried shallot is a one of my favourite. 
+                Rice is a basic staple for the people in Asia, so many rice stalls are spread across the city. The sweet and savoury sambal kecap is the favourite here, as well as the aromatic rice and well-seasoned long beans. Make sure you get a bowl of their Mie Pangsit as well which is infused with bold pork aroma (in the soup).</p></th>
+                </tr>
+        </table>
+        </div>
+
+        <div id="Kesawan" class="tabcontent">
+        <h3>Soto Kesawan</h3>
+        <table>
+              <tr>
+                <th>
+                  <img src="f-4.jpg" alt="Soto Kesawan" style="width:100%">
+                  </th>
+                <th><p style="font-size: 20px">Located right across the cultural heritage mansion Tjong A Fie in Medan, this place is perfect to start your morning with before going to explore the city. They have three different types of ingredients you choose to accompany your Soto with, ranging from chicken, cow, and shrimp; or just have them all in the bowl!</p></th>
+              </tr>
+            </table>
+            </div>
+
+        <div id="Gumarang" class="tabcontent">
+            <h3>Gumarang Jaya</h3>
+            <table>
+                  <tr>
+                    <th><div class="row">
+                          <div class="column">
+                              <img src="f-5.jpg" alt="R.M. Gumarang Jaya" style="width:100%">
+                              </div>
+                              <div class="column">
+                                <img src="f-51.jpg" alt="Peyek Udang" style="width:100%">
+                              </div>
+                              <div class="column">
+                                <img src="f-52.jpg" alt="Mixed Rice" style="width:100%">
+                              </div>
+                            </div></th>
+                    <th><p style="font-size: 20px">Founded in 1966, this restaurant sells Minang Cuisine or also known as Padang Cuisine. Traditionally, you’ll be served a number of cuisines right on the table — you pay what you eat so don’t be surprised if they charge you a lot if you finish everything on the table. However, a more popular dining experience has emerged and all you have to do is get what you want wrapped up in the banana leaf and eat on the spot. The banana leaf fragrant that is used to wrap the rice will definitely add more aroma as well.</p></th>
+                  </tr>
+                </table> 
+          </div>
+
+        <div id="Ondo" class="tabcontent">
+            <h3>Ondo</h3>
+            <table>
+                    <tr>
+                    <th><div class="row">
+                            <div class="column">
+                                <img src="f-6.jpg" alt="Ondo" style="width:100%">
+                                </div>
+                                <div class="column">
+                                <img src="f-61.jpg" alt="Menu Ondo" style="width:100%">
+                                </div>
+                                <div class="column">
+                                <img src="f-62.jpg" alt="Kalbi Ondo" style="width:100%">
+                                  </div>
+                                </div></th>
+                    <th><p style="font-size: 20px">With a touch of Korean’s flavour in the kitchen, Ondo brings a twist in Bataknese’s generic grilled pork. On the menu, they serve Batak-style grilled pork along with Korean-style grilled ribs, such as Kalbi Saos Ondo, which we recommend you to try.</p></th>
+                    </tr>
+                </table> 
+            </div>
+<script>
+function openfood(evt, foodName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(foodName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
